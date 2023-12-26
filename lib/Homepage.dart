@@ -3,6 +3,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:socail_media/Picture.dart';
+import 'package:socail_media/icon.dart';
+
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -116,101 +118,28 @@ class Homepage extends StatelessWidget {
                   Text('Exarsize',style: TextStyle(fontSize: 20),),
                   Icon(Icons.more_horiz,size: 30,color: Colors.black,)
                 ],),
-
               ),
               SizedBox(height: 20,),
-               Container(
-                padding: EdgeInsets.all(10),
-                decoration: BoxDecoration(color:
-                Color.fromARGB(218, 245, 243, 238),
-                borderRadius: BorderRadius.circular(15),
-                ),
-              child: Column(children: [
-                   Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                    Container(
-                     decoration: BoxDecoration(
-                      color: Colors.orange,
-                      borderRadius:BorderRadius.circular(20)
-                     ),
-                     
-                      child: Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: Icon(Icons.favorite,size: 40,color: Colors.white,),
-                      )),
-                    SizedBox(width: 30,),
-                    Column(
-                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                      Text('Exercise',style: TextStyle(fontSize: 30,color: Colors.black87),),
-                      Text('15 Exercise',style: TextStyle(fontSize: 15,color: Colors.black87)),
-                    ],),
-                    SizedBox(width:100,),
-                    Icon(Icons.more_horiz,size: 40,color: Colors.black,),
+              Expanded(
+                child: ListView(
+                  children: [
+                  chechta(Exarsize:'Madrsa', numberExarsize:'20 Madrasa',
+                   data:Icons.favorite,Color: Colors.orange,), 
+                     chechta(Exarsize:'Madrsa', numberExarsize:'20 Madrasa',
+                   data:Icons.accessibility,Color: Colors.black87,),
+                     chechta(Exarsize:'Madrsa', numberExarsize:'20 Madrasa',
+                   data:Icons.add_rounded,Color: Colors.blueAccent,),
+                     chechta(Exarsize:'Madrsa', numberExarsize:'20 Madrasa',
+                   data:Icons.air_sharp,Color: Colors.yellow,),
+                     chechta(Exarsize:'Madrsa', numberExarsize:'20 Madrasa',
+                   data:Icons.add_ic_call_rounded,Color: Colors.grey,),
+                     chechta(Exarsize:'Madrsa', numberExarsize:'20 Madrasa',
+                   data:Icons.phone_android,Color: Colors.brown,),
+                     chechta(Exarsize:'Madrsa', numberExarsize:'20 Madrasa',
+                   data:Icons.security,Color: Colors.lime,),
                   ],
-                  ),
-                  
                 ),
-              
-                   Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                    Container(
-                     decoration: BoxDecoration(
-                      color: Colors.orange,
-                      borderRadius:BorderRadius.circular(20)
-                     ),
-                     
-                      child: Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: Icon(Icons.auto_graph,size: 40,color: Colors.white,),
-                      )),
-                    SizedBox(width: 30,),
-                    Column(
-                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                      Text('chechta',style: TextStyle(fontSize: 30,color: Colors.black87),),
-                      Text('22 shofolta',style: TextStyle(fontSize: 15,color: Colors.black87)),
-                    ],),
-                    SizedBox(width:100,),
-                    Icon(Icons.more_horiz,size: 40,color: Colors.black,),
-                  ],
-                  ),
-                  
-                ),
-              
-                 Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                    Container(
-                     decoration: BoxDecoration(
-                      color: Colors.orange,
-                      borderRadius:BorderRadius.circular(20)
-                     ),
-                     
-                      child: Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: Icon(Icons.add_home_work,size: 40,color: Colors.white,),
-                      )),
-                    SizedBox(width: 30,),
-                    Column(
-                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                      Text('practic',style: TextStyle(fontSize: 30,color: Colors.black87),),
-                      Text('20 prautis',style: TextStyle(fontSize: 15,color: Colors.black87)),
-                    ],),
-                    SizedBox(width:100,),
-                    Icon(Icons.more_horiz,size: 40,color: Colors.black,),
-                  ],
-                  ),
-                  
-                ),
-              ],),
-                )
+              )
              ],),
               )),
              
